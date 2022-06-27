@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio web</title>
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/064a6e596b.js" crossorigin="anonymous"></script>
+    <link href="portfolio.css" rel="stylesheet">
+    <link href="grids.css" rel="stylesheet">   
+    <link href="texts.css" rel="stylesheet">
+    <link href="buttons.css" rel="stylesheet"> 
+    <link href="cards.css" rel="stylesheet"> 
+    <link href="variables.css" rel="stylesheet">
+    <link href="input.css" rel="stylesheet">
+    <link href="mediaquerie-xl.css" rel="stylesheet">
+    <link href="mediaqueries-lg.css" rel="stylesheet">
+    <link href="mediaqueries-md.css" rel="stylesheet">
+    <link href="mediaquerie-sm.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#">
+                BGVM
+            </a>
+            <ul class="nav-list-desktop">
+                <li>
+                    <a href="#About-me">About me</a>
+                </li>
+                <li>
+                    <a href="#Proyects">Proyects</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="nav-list-mobile">
+                <li onclick="toggleNavbar()">
+                    <i class="fas fa-bars"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="jumbotron">
+        <div class="container">
+            <div class="jumbotron-grid" style="
+             display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                <div>
+                    <picture class="shape">
+                        <img src="tunacei.jpg" alt="Hola, soy Benicio" style="width: 100%;" class="aceituna">
+                    </picture>
+                </div>
+                <div>
+                    <h2  class="txt-display-1">Hi</h2>
+                    <h3 class="txt-display-2">I'm Benicio Vargas</h3>
+                    <p class="txt-body-lg-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Asperiores reiciendis quis pariatur maxime ad corrupti eligendi error ex, quo tenetur soluta sit consequatur assumenda atque quasi vel consectetur. 
+                        Deserunt, velit!</p>
+                        <div class="socialnets-grid">
+                            <button class="btn btn-icon">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button class="btn btn-icon">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button class="btn btn-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </button>
+                            <button class="btn btn-icon">
+                                <i class="fab fa-github"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-me">
+        <div class="container">
+            <h2 class="title-section mb-5s">About me</h2>
+            <div class="aboutme-grid">
+                <div>
+                    <p class="txt-body-lg-2 color-wh-1">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Cum quod non eveniet aliquid quia laudantium harum vitae, alias odio enim, labore maiores odit, accusantium saepe vel.
+                         Assumenda explicabo suscipit ullam?
+                    </p>
+                </div>
+                <div class="aboutme-items-grid">
+                    <figure class="item">
+                        <img src="images.png">
+                    </figure>
+                    <figure class="item">
+                        <img src="botseo.jpg">
+                    </figure> <figure class="item">
+                        <img src="programacion.png">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="title-section mb-5s">projects</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <figure class="card-picture">
+                        <img src="tostado.png">
+                    </figure>
+                    <div class="card-content">
+                        <h3 class="txt-subtitle-1 color-wh">Titulo del proyecto</h3>
+                        <p class="txt-body-1 color-wh"></p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Nesciunt nisi cum assumenda dolore culpa, 
+                        laborum quo repudiandae in temporibus velit maxime ab ad quas nihil doloribus possimus dolorum. 
+                        Aliquam, sapiente.
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card-picture">
+                        <img src="tostado.png">
+                    </figure>
+                    <div class="card-content">
+                        <h3 class="txt-subtitle-1 color-wh">Titulo del proyecto</h3>
+                        <p class="txt-body-1 color-wh"></p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Nesciunt nisi cum assumenda dolore culpa, 
+                        laborum quo repudiandae in temporibus velit maxime ab ad quas nihil doloribus possimus dolorum. 
+                        Aliquam, sapiente.
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card-picture">
+                        <img src="tostado.png">
+                    </figure>
+                    <div class="card-content">
+                        <h3 class="txt-subtitle-1 mt-1 mb-2 color-wh" >Titulo del proyecto</h3>
+                        <p class="txt-body-1 color-wh"></p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Nesciunt nisi cum assumenda dolore culpa, 
+                        laborum quo repudiandae in temporibus velit maxime ab ad quas nihil doloribus possimus dolorum. 
+                        Aliquam, sapiente.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="container">
+            <h2 class="title-section mb-5s">contact</h2>
+            <div class="contact-grid">
+                <div class="card-form">
+                    <form>
+                        <div class="form-box" mb-2>
+                            <label>Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="form-box" mb-2>
+                            <label>Asunto</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-box" mb-2>
+                            <label>Mensaje</label>
+                            <input type="text">
+                        </div>
+                        <button class="btn block" type="submit">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <p class="txt-body-ig-1 color-1">You can find me on:</p>
+                    <ul>
+                        <li class="row-v-center my-2">
+                            <button class="btn btn-icon">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button class="btn btn-icon">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button class="btn btn-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </button>
+                            <button class="btn btn-icon">
+                                <i class="fab fa-github"></i>
+                            </button>
+                            <span class="color-1 txt-subtitle-1 ml-1">@beniciovargas161207</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Made width
+            <i class="fas fa-heart"></i>
+            by BenicioVargas
+        </p>
+    </footer>
+</body>
+</html>

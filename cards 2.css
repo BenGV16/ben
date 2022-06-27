@@ -1,0 +1,340 @@
+.card .card-picture img{
+    width: 100%;
+    border-radius: 8px;
+    background-color: white;
+}
+.card{
+    background-color: rgb(21, 15, 68);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+    transform: scale(1);
+    transition: 250ms ease-in-out all;
+}
+.card:hover{
+    box-shadow: 0px 2px 8px 4px rgba(72, 149, 192, 0.5);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card-content{
+    color: rgb(183, 141, 252);
+}
+
+.card-form{
+    background-color: rgb(21, 15, 68);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    color: rgb(66, 78, 119);
+}
+
+
+
+button{
+    width: fit-content;
+}
+.btn{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    background:rgb(30,177,195);
+    background: linear-gradient(90deg, rgba(30,177,195,1) 0%, rgba(0,211,255,1) 50%, rgba(76,224,255,1) 100%);
+    color: black;
+}
+.btn.block {
+    width: 100%;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 8px 4px rgba(64, 72, 100, 0.534);
+}
+.btn.btn-icon{
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.txt-display-1{
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    color: white;
+}
+.txt-display-2{
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+}
+.txt-subtitle-1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+.txt-body-lg-1{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgb(183, 141, 252);
+}
+
+.txt-body-lg-2{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.txt-body-1{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.color-wh{
+    color: white;
+}
+.color-wh-1{
+    color: rgb(183, 141, 252);
+}
+.color-1{
+    color: rgb(6, 135, 248);
+}
+.color-2{
+    color: rgb(41, 46, 65);
+}
+.color-3{
+    color: rgb(21, 15, 68);
+}
+.title-section{
+    font-size: 3rem;
+    font-weight: bold;
+    width: fit-content;
+    color: rgb(41, 46, 65);
+    border-radius: 81% 19% 89% 11% / 41% 63% 37% 59% ;
+    background-color: rgb(6, 135, 248);
+    padding: 1,5rem 2rem 1,5rem 0;
+    position: relative;
+}
+
+.title-section::before{
+    content: "";
+    height: 100;
+    width: 50px;
+    position: absolute;
+    left: -50px;
+    border-radius: 21% 84% 16% / 46% 52% 48% 54%; 
+    top: 0;
+    background-color: rgb(6, 135, 248);
+}
+
+.title-section::after{
+    content: "";
+    height: 100;
+    width: 70px;
+    position: absolute;
+    right: -50px;
+    top: 0;
+    border-radius: 21% 84% 16% / 46% 52% 48% 54%;
+    background-color: rgb(6, 135, 248);
+    box-shadow: 8px 0 0px 0px ;
+}
+
+
+.form-box label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(183, 141, 252);
+    padding: 0.5rem;
+}
+.form-box input{
+    width: 100%;
+    background-color: rgb(108, 92, 177);
+    border-radius: 0.25rem;
+}
+
+
+.jumbotron-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    min-height: calc(100vh - 55px);
+    gap: 2rem;
+}
+
+.jumbotron-grid img{
+    width: 100%;    
+}
+
+.socialnets-grid{
+    width: 100%;
+}
+.aboutme-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+.aboutme-items-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+}
+
+.aboutme-items-grid .item{
+    width: 80px;
+    height: 80px;
+}
+
+.aboutme-items-grid .item img{
+    width: 100%;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+.contact-grid > div:nth-child(2){
+    width: fit-content;
+    height: fit-content;
+    place-self: center;
+}
+@media (max-widht: 476px){
+    .contact-grid{
+        grid-template-columns: 1fr
+    }
+}
+
+
+:root{
+    --color-1: rgb(6, 135, 248);
+    --color-2: rgb(41, 46, 65);
+    --color-3: rgb(21, 15, 68);
+    --color-wh: white;
+    --color-wh-1: rgb(183, 141, 252);
+    --color-bl: black;
+
+    --gap-1: 0,5rem;
+    --gap-2: 1rem;
+    --gap-3:1,5rem;
+    --gap-4: 2rem;
+    --gap-5: 3rem;
+
+    --br-1: 0.25rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;1,200&display=swap');
+
+body{
+    background: rgb(5, 5, 48);
+}
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: 900px;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    background-color: yellow;
+    padding: 0.5rem 0rem;
+
+}
+nav ul li{
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 300 all ease;   
+}
+nav ul li:hover{
+    background-color: rgb(156, 148, 148);
+    cursor: pointer;
+}
+nav a{
+    color: blue;
+    text-decoration: none;
+}
+
+@media (max-widht: 768px){
+    ul.nav-list-desktop{
+        background: black;
+        z-index: -1;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        transform: translateY(-100%);
+        right: 0;
+        transition: 0.3s; all:ease;
+    }
+    ul.nav-list-desktop.show{
+        transform: translateY(0);
+    }
+    nav ul.nav-list-mobile{
+        display: flex;
+    }
+}
+
+section:not(#jumbotron) {
+    padding: 3rem 0;
+}
+ul{
+    list-style: none;
+}
+.row-v-center{
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(149, 222, 255);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+@media (max-widht: 998px){
+
+}
+
+@media (max-widht: 768px){
+
+}
+
+@media (max-widht: 476px){
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-widht: 1200px){
+
+}
